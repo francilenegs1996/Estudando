@@ -27,5 +27,16 @@ AreasDoUX.shift('web');
 
 AreasDoUX.shift('mobile');
 
-console.log(AreasDoUX);
+//splice() Adiciona ou remove elementos de qualquer posição do array.
+// exemplo : AreasDoUX.splice(1,2);
+//console.log(AreasDoUX)
+
+//sort(): Ordena os elementos.
+AreasDoUX.sort();
+
+//reverse(): Inverte a ordem dos elementos.
+AreasDoUX.reverse;
+
+
+
 
