@@ -1,0 +1,113 @@
+body {
+    
+    padding: 0;
+    overflow: hidden;
+    background: #4e6766;
+    width: 100vw;
+    height: calc(100vh - 40px); /* Ajusta a altura para considerar o espaço no topo */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+
+
+}
+
+.conteudo-todo {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    background-color: brown;
+    width: 20vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+/* Minhas tags */
+
+
+h3 {
+    color: #000000;
+    text-align: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+/* buttons */
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: rgb(143, 87, 87);
+    transform: scale(1.1); 
+}
+
+.zero {
+    width: 128px;
+}
+
+.limpar {
+    width: 128px;
+    background-color: darkgrey;
+}
+
+.igualdade {
+    height: 128px;
+    background-color: darkgrey;
+}
+
+.subtrair {
+    background-color: darkgrey;
+}
+
+.soma {
+    background-color: darkgrey;
+}
+
+.multiplicar {
+    background-color: darkgrey;
+}
+
+.divisao {
+    background-color: darkgrey;
+}
+
+#resultado {
+    background-color: aliceblue;
+    width: 262px;
+    height: 60px;
+    border-radius: 2px;
+    font-size: 26px;
+    margin-top: 20px; /* Espaço entre o título e o resultado */
+    
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: flex-end; /* Alinha o texto à direita */
+    padding-right: 10px; /* Espaçamento à direita para um melhor visual */
+    text-align: right; /* Alinha o texto à direita dentro do elemento */
+}
+
+
+/* Media Query para dispositivos móveis */
+
+
+@media (max-width: 1340px) and (min-width: 300px)
+{
+
+    .conteudo-todo{
+        width: 80vw;
+        height: 80vh;
+    }
+}
