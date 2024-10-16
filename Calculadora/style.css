@@ -15,12 +15,12 @@ body {
 
 .conteudo-todo {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    background-color: brown;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #242424;
     width: 20vw;
-    height: 70vh;
+    height: 80vh;
     border-radius: 20px;
 }
 
@@ -90,13 +90,13 @@ button:hover {
     height: 60px;
     border-radius: 2px;
     font-size: 26px;
-    margin-top: 20px; /* Espaço entre o título e o resultado */
+    margin-top: 20px;
     
-    display: flex; /* Ativa o Flexbox */
-    align-items: center; /* Centraliza o texto verticalmente */
-    justify-content: flex-end; /* Alinha o texto à direita */
-    padding-right: 10px; /* Espaçamento à direita para um melhor visual */
-    text-align: right; /* Alinha o texto à direita dentro do elemento */
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    padding-right: 10px; 
+    text-align: right; 
 }
 
 
