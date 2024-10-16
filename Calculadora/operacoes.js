@@ -1,33 +1,20 @@
-//Funções das operações básicas
-
-function soma(numero1, numero2) {
-  return numero1 + numero2;
-}
-
-function subtrair(numero1, numero2) {
-  return numero1 - numero2;
-}
-
-function multiplicar(numero1, numero2) {
-  return numero1 * numero2;
-}
-
-function dividir(numero1, numero2) {
-  return numero1 / numero2;
-}
 
 
 function insert(num) {
-    var numero = document.getElementById('resultado').innerHTML;
+  let display = document.getElementById("resultado").innerHTML;
 
-    if (numero === "0") {
-        document.getElementById('resultado').innerHTML = num;
-    } else {
-        document.getElementById('resultado').innerHTML = numero + num;
-    }
+  // Se o display já tiver "0", substituímos pelo número digitado
+  if (display === "0") {
+    document.getElementById("resultado").innerHTML = num;
+    currentNumber = num; // Atualiza o número atual
+  } else {
+    document.getElementById("resultado").innerHTML += num;
+    currentNumber += num; // Concatenamos o novo número
+  }
 }
 
-function clean()
-        {
-            document.getElementById('resultado').innerHTML = "0";
-        }
+function clean() {
+  document.getElementById("resultado").innerHTML = "0";
+}
+
+
