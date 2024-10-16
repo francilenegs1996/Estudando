@@ -1,0 +1,1 @@
+import { insert, clean, back, calcular } from './operacoes.js';
