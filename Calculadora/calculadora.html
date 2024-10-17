@@ -7,7 +7,6 @@
     
     <link rel="stylesheet" href="/Calculadora/style.css">
     <script src="/Calculadora/operacoes.js"></script>
-    <script src="/Calculadora/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
@@ -20,8 +19,8 @@
     <p id="resultado">0</p>
     <table>
         <tr>
-            <td><button class="divisao" onclick="insert('/')">/</button></td>
-            <td><button class="multiplicar" onclick="insert('*')">X</button></td>
+            <td><button class="divisao" onclick="escolherOperador('/')">/</button></td>
+            <td><button class="multiplicar" onclick="escolherOperador('*')">X</button></td>
             <td colspan="2"><button class="limpar" onclick="clean()">C</button></td>
         </tr>
         
@@ -30,21 +29,21 @@
             <td><button class="num7" onclick="insert('7')">7</button></td> <!-- (table data) -->
             <td><button class="num8" onclick="insert('8')">8</button></td>
             <td><button class="num9" onclick="insert('9')">9</button></td>
-            <td><button class="subtrair" onclick="insert('-')">-</button></td>
+            <td><button class="subtrair" onclick="escolherOperador('-')">-</button></td>
         </tr>
         
         <tr> <!-- (numeros e menos) -->
             <td><button class="num4" onclick="insert('4')">4</button></td> <!-- (table data) -->
             <td><button class="num5" onclick="insert('5')">5</button></td>
             <td><button class="num6" onclick="insert('6')">6</button></td>
-            <td><button class="soma" onclick="insert('+')">+</button></td>
+            <td><button class="soma" onclick="escolherOperador('+')">+</button></td>
         </tr>
     
         <tr> <!-- (numeros) -->
             <td><button class="num1" onclick="insert('1')">1</button></td> <!-- (table data) -->
             <td><button class="num2" onclick="insert('2')">2</button></td>
             <td><button class="num3" onclick="insert('3')">3</button></td>
-            <td rowspan="2"><button class="igualdade" onclick="insert('=')">=</button></td>
+            <td rowspan="2"><button class="igualdade" onclick="calcular()">=</button></td>
         </tr>
     
         <tr> <!-- (numeros) -->
