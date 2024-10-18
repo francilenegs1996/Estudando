@@ -1,4 +1,4 @@
-// Variáveis globais para armazenar os valores e o operador
+// Variáveis para armazenar os valores e o operador
 let numero1 = "";
 let operador = "";
 let numero2 = "";
@@ -23,7 +23,13 @@ function dividir(numero1, numero2) {
 
 // Função para inserir números no display
 function insert(num) {
+  
   var display = document.getElementById('resultado').innerHTML;
+
+  if (display.length >= 16) {
+    alert('Ops!  Eu sou uma calculadora básica, só aguento 16 caracteres , pequeno gafanhoto :)');
+    return; // Interrompe a execução da função para impedir a adição de mais caracteres
+  }
 
   // Se o display está com "0" ou precisa ser resetado (após selecionar um operador)
   if (display === "0" || resetDisplay) {
@@ -52,6 +58,10 @@ function clean() {
 
 // Função para escolher o operador
 function escolherOperador(op) {
+
+  if (numero2){
+    calcular();
+  }
   // Somente escolhe o operador se o número1 já foi inserido
   if (numero1 !== "") {
     operador = op;
@@ -61,6 +71,12 @@ function escolherOperador(op) {
 
 // Função para calcular o resultado
 function calcular() {
+
+  
+  
+  if (!numero1 || !numero2) {
+    return;
+  }
   let resultado = 0;
   
   const num1 = parseFloat(numero1);
@@ -79,10 +95,18 @@ function calcular() {
     }
     resultado = dividir(num1, num2);
   }
+  
+  if (resultado.toString().length  >= 16) {
+    alert( ' Ei, sou uma calcualdora básica e seu resultado ultrapassou meu limite de 16 caracteres :)')
+    
+    document.getElementById('resultado').innerHTML= "Erro";  
+    
+    return;
+  }
 
   document.getElementById('resultado').innerHTML = resultado;
   numero1 = resultado.toString(); // Permite que o resultado se torne o próximo número1
   numero2 = "";
   operador = "";
-  resetDisplay = true; // Após o cálculo, o próximo número deve resetar o display
+  resetDisplay = true; // Depois  do cálculo, o próximo número deve resetar o display
 }

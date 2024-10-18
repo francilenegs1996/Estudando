@@ -23,3 +23,4 @@ Remove o último caractere do display (uma função de "apagar" o último númer
 
 Avalia o que está no display (dentro do elemento com id resultado) e tenta executar a expressão matemática usando eval(). Se houver uma expressão válida, ele a calcula, caso contrário, mostra "Nada...".
 
+() isso significa chamar a função.

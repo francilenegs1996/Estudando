@@ -39,3 +39,17 @@ numero1 e numero2 armazenam os números que o usuário digita.
 operador armazena o operador escolhido pelo usuário.
 resetDisplay é um controle que indica quando o display deve ser resetado (ou seja, quando o segundo número deve ser inserido).
 
+
+IF com Return quebra o fluxo.
+As validações são criadas sempre antes, e devem existir o que queremos.
+
+OBS:exemplo pra mim mesma kkk
+if ( display.lenght >= 16) {
+   alerta ('Minha mensagem')
+
+  Aqui eu posso chamar o que eu quiser, quer dizer, depende né, vou testar depois
+
+   return:
+
+
+}

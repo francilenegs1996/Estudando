@@ -49,7 +49,7 @@ button {
     margin: 2px;
 }
 
-button:hover {
+button:active {
     background-color: rgb(143, 87, 87);
     transform: scale(1.1); 
 }
